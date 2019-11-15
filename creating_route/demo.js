@@ -79,23 +79,11 @@ var routingParameters = {
  }, false);
 // =========================== middle stop end
 
-
-
-
-
-
-
-
-
-
+// =========================== second stop 
  var busStop_2_location = {lat: 12.982485992397676,lng: 77.6928617425874}
  var busStop_2 = new H.map.Marker(busStop_2_location)
  
  map.addObjects([busStop_1,busStop_2,busStop_middle])
-
-
-
- 
 
  busStop_2.addEventListener('tap', function (evt) {
 	// event target is the marker itself, group is a parent event target
@@ -132,7 +120,7 @@ var routingParameters = {
 
 }, false);
 
-
+// =========================== second stop end
   
   // Define a callback function to process the routing response:
   var onResult = function(result) {
@@ -169,9 +157,7 @@ var routingParameters = {
 	// Add the route polyline and the two markers to the map:
 	map.addObjects([routeLine]);
   
-	// Set the map's viewport to make the whole route visible:
-	//map.getViewModel().setLookAtData({bounds: routeLine.getBoundingBox()});
 	}
-  };
+  }
   
  
