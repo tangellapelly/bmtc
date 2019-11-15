@@ -1,0 +1,1 @@
+* double click on map to add a marker(bus stop)
